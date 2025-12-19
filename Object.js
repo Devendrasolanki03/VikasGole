@@ -187,15 +187,54 @@
 // console.log(Object.values(obj))// values
 // console.log(Object.entries(obj))
 
-let obj1 = {
-    id:1,
-    name:"dev",
+// let obj1 = {
+//     id:1,
+//     name:"dev",
 
-}
-Object.freeze(obj1)
-obj1.age=50;
-console.log(obj1)
+// }
+// // Object.freeze(obj1)
+// Object.seal(obj1)
+// console.log(obj1)
+// obj1.name="ravi"
+// console.log(obj1)
+
+// let student = {
+//     name:'dev',
+//     address:{
+//         city:"indore",
+//         pin:455521
+//     }
+// }
+// Object.freeze(student)
+// student.age=30;
+// console.log(student)
+// student.address.state="MP";
+// console.log(student)
+// console.log(student.address.city)
+// let student = {
+//     name:'dev',
+//     address:{
+//         city:"indore",
+//         pin:455521
+//     }
+// }
 
 
-delete obj1.name
-console.log(obj1)
+// let student1 = {
+//     name:'dev',
+//     address:{
+//         city:"indore",
+//         pin:455521
+//     }
+// }
+
+// let s1 = student1;
+// console.log(student===student1)//false
+// console.log(s1==student1)// ture 
+
+// let x = [23]
+// let y = [23]
+
+// console.log(typeof(x)
+// )
+// console.log(x==y) // false
