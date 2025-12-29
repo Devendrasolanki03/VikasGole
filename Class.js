@@ -48,36 +48,36 @@
 // s1.display();
 
 
+//setter and getter
+// class Student {
+//   constructor(name, age) {
+//     console.log("this is param constructor");
+//     this._name = name;   // backing variable
+//     this._age = age;
+//   }
 
-class Student {
-  constructor(name, age) {
-    console.log("this is param constructor");
-    this._name = name;   // backing variable
-    this._age = age;
-  }
+//   // getter
+//   get name() {
+//     return this._name;
+//   }
 
-  // getter
-  get name() {
-    return this._name;
-  }
+//   // setter
+//   set name(value) {
+//     this._name = value;
+//   }
 
-  // setter
-  set name(value) {
-    this._name = value;
-  }
+//   get age() {
+//     return this._age;
+//   }
 
-  get age() {
-    return this._age;
-  }
+//   set age(value) {
+//     this._age = value;
+//   }
+// }
 
-  set age(value) {
-    this._age = value;
-  }
-}
-
-// usage
-const s1 = new Student("Dev", 24);
-console.log(s1.name);   // Dev
-console.log(s1.age)
-s1.name = "Devendra";
-console.log(s1.name);   // Devendra
+// // usage
+// const s1 = new Student("Dev", 24);
+// console.log(s1.name);   // Dev
+// console.log(s1.age)
+// s1.name = "Devendra";
+// console.log(s1.name);   // Devendra
