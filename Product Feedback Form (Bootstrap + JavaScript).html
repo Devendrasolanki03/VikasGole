@@ -25,35 +25,33 @@
         <div class="card-body">
             <form id="feedbackForm" onsubmit="return validateForm()">
 
-                <!-- Customer Name -->
                 <div class="mb-3">
                     <label class="form-label">Customer Name</label>
                     <input type="text" id="customerName" class="form-control">
                     <span id="nameError" class="error"></span>
                 </div>
 
-                <!-- Order ID -->
+            
                 <div class="mb-3">
                     <label class="form-label">Order ID</label>
                     <input type="text" id="orderId" class="form-control">
                     <span id="orderError" class="error"></span>
                 </div>
 
-                <!-- Email -->
+        
                 <div class="mb-3">
                     <label class="form-label">Email</label>
                     <input type="email" id="email" class="form-control">
                     <span id="emailError" class="error"></span>
                 </div>
 
-                <!-- Product Name -->
                 <div class="mb-3">
                     <label class="form-label">Product Name</label>
                     <input type="text" id="productName" class="form-control">
                     <span id="productError" class="error"></span>
                 </div>
 
-                <!-- Rating -->
+           
                 <div class="mb-3">
                     <label class="form-label">Rating</label><br>
                     <div class="form-check form-check-inline">
@@ -75,7 +73,7 @@
                     <span id="ratingError" class="error"></span>
                 </div>
 
-                <!-- Feedback Type -->
+           
                 <div class="mb-3">
                     <label class="form-label">Feedback Type</label>
                     <select id="feedbackType" class="form-select">
@@ -87,14 +85,14 @@
                     <span id="typeError" class="error"></span>
                 </div>
 
-                <!-- Feedback Message -->
+          
                 <div class="mb-3">
                     <label class="form-label">Feedback Message</label>
                     <textarea id="feedbackMessage" class="form-control" rows="4"></textarea>
                     <span id="messageError" class="error"></span>
                 </div>
 
-                <!-- Recommend -->
+             
                 <div class="mb-3">
                     <label class="form-label">Recommend to Others?</label><br>
                     <div class="form-check form-check-inline">
@@ -107,13 +105,13 @@
                     <span id="recommendError" class="error"></span>
                 </div>
 
-                <!-- Subscribe -->
+            
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="subscribe">
                     <label class="form-check-label">Subscribe to Newsletter</label>
                 </div>
 
-                <!-- Buttons -->
+               
                 <div class="text-center">
                     <button type="submit" class="btn btn-success">Submit</button>
                     <button type="reset" class="btn btn-danger">Reset</button>
@@ -124,13 +122,13 @@
     </div>
 </div>
 
-<!-- JavaScript Validation -->
+
 <script>
 function validateForm() {
 
     let isValid = true;
 
-    // Clear previous errors
+ 
     document.querySelectorAll(".error").forEach(e => e.innerHTML = "");
 
     let name = customerName.value.trim();
