@@ -54,7 +54,7 @@
 // // // console.log(student)
 // // console.log(student[0])
 
-// for (var students of student) 
+// for (var students of student)
 //     {
 //      console.log(students)
 // }
@@ -141,12 +141,12 @@
 //     if (movie.iswatech) {
 //         result = result + " watched ";
 //     } else {
-//         result = result + " not seen "   
+//         result = result + " not seen "
 //     }
 //     result = result+movie.name + "  add movies is"
-//     if (movie.isHit) 
+//     if (movie.isHit)
 //         {
-//             result = result+ " Hit "        
+//             result = result+ " Hit "
 //     } else {
 //         result = result+" flop "
 //     }
@@ -230,7 +230,7 @@
 
 // let s1 = student1;
 // console.log(student===student1)//false
-// console.log(s1==student1)// ture 
+// console.log(s1==student1)// ture
 
 // let x = [23]
 // let y = [23]
@@ -241,7 +241,7 @@
 
 
 
-// assginment 
+// assginment
 // 1.
 // An array holds food order objects with dishName, isDelivered, and isVegetarian.
 
@@ -446,3 +446,40 @@
 
 // } while (choice !== "7");
 
+
+
+// //explain object and its all methods
+// let person = {
+//     name: "dev",
+//     age: 22,
+//     city: "hyd"
+// };
+// console.log(Object.keys(person));// return array of keys
+// console.log(Object.values(person));// return array of values
+// console.log(Object.entries(person));   // return array of key value pairs
+// console.log(Object.fromEntries([["name", "dev"], ["age", 22], ["city", "hyd"]])); // convert array of key value pairs to object
+// console.log(Object.assign({ country: "india" }, person));// merge objects
+// console.log(Object.freeze(person));// will freeze the object
+// person.age = 23; // will not change because object is freezed
+// console.log(person);// { name: 'dev', age: 22, city: 'hyd' }
+// console.log(Object.freeze(person));// will freeze the object
+// console.log(Object.seal(person));
+// person.city = "banglore";
+// person.country = "india"; // will not add because object is sealed
+// console.log(person);
+
+// console.log(Object.getOwnPropertyDescriptors(person));
+// console.log(Object.getOwnPropertyNames(person));
+// console.log(Object.getOwnPropertySymbols(person)); // if symbol properties are there then it will return otherwise empty array
+// console.log(Object.isExtensible(person)); // false because object is sealed
+// console.log(Object.isFrozen(person)); // true because object is freezed
+// console.log(Object.isSealed(person)); // true because object is sealed
+// console.log(Object.preventExtensions(person)); // will prevent further extensions to object
+// person.state = "telangana"; // will not add because object is not extensible
+// console.log(person);
+// console.log(Object.prototype.toString.call(person));
+// console.log(Object.prototype.hasOwnProperty.call(person, "name"));
+// console.log(Object.prototype.isPrototypeOf.call({}, person)); // false because person is not prototype of {}
+// console.log(Object.prototype.propertyIsEnumerable.call(person, "name")); // true because name is enumerable property
+// console.log(Object.prototype.valueOf.call(person));
+// console.log(Object.create(person)); // create new object with person as prototype

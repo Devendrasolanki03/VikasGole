@@ -130,23 +130,51 @@
 
 
 //08
-function getApp(id) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            console.log(" data ",id);
-            resolve("scucess");
-        }, 2000);
-    });
-}
-async function getData() {
-    console.log("geting data 1")
-    await getApp(1);
-     console.log("geting data 2")
-    await getApp(2);
-    console.log("getting data 3 ")
-    await getApp(3);
-}
-getData();
+// function getApp(id) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log(" data ",id);
+//             resolve("scucess");
+//         }, 2000);
+//     });
+// }
+// async function getData() {
+//     console.log("geting data 1")
+//     await getApp(1);
+//      console.log("geting data 2")
+//     await getApp(2);
+//     console.log("getting data 3 ")
+//     await getApp(3);
+// }
+// getData();
+
+// optional chaing
+
+// let user = {
+//     profile :{
+//         email : "abc@gmail.com"
+//     }
+
+// }
+
+// console.log(user.profile.email);
+// console.log(user.post?.phone);
+
+
+
+// let arr = [1, 8, 6, 66]
+// console.log(arr[9]?.toString());
+
+
+
+let obj = {
+    get: function () {
+        return "hello"
+    }
+};
+
+// console.log(obj.get());
+console.log(obj.bye?.())
 
 
 
