@@ -66,3 +66,6 @@ console.log(weakmap);
 // }// error because weakmap is not iterable
 
 
+
+// weakset 
+

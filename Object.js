@@ -483,3 +483,102 @@
 // console.log(Object.prototype.propertyIsEnumerable.call(person, "name")); // true because name is enumerable property
 // console.log(Object.prototype.valueOf.call(person));
 // console.log(Object.create(person)); // create new object with person as prototype
+
+
+
+
+const user = {
+    name: "Devendra",
+    role: "Java Developer",
+    experience: 1
+};
+
+// console.log(Object.keys(user)); // it will return array of keys
+// console.log(Object.values(user)); // it will return array of values
+// console.log(Object.entries(user)); // it will return array of key value pairs
+// console.log(Object.fromEntries([["name", "Devendra"], ["role", "Java Developer"], ["experience", 1]])); // it will convert array of key value pairs to object
+// console.log(Object.assign({ location: "India" }, user)); // it will merge two objects
+// Object.freeze(user); // it will freeze the object
+// user.experience = 2; // it will not change the value because object is freezed
+// console.log(user); // { name: 'Devendra', role: 'Java Developer', experience: 1 }
+
+
+// Object.seal(user); // it will seal the object
+// user.role = "Senior Java Developer"; // it will change the value because object is sealed
+// user.location = "India"; // it will not add new property because object is sealed
+// console.log(user); // { name: 'Devendra', role: 'Senior Java Developer', experience: 1 }
+
+
+// hasOwnProperty
+// console.log(user.hasOwnProperty("name")); // true it checks if the property exists in the object
+// console.log(user.hasOwnProperty("location")); // false
+
+
+// create
+// const newUser = Object.create(user); // it will create new object with user as prototype
+// console.log(newUser); // {}
+// console.log(newUser.name); // Devendra
+// console.log(newUser.role); // Java Developer
+
+
+// //is() this method checks if two objects are the same
+// const user1 = {
+//     name: "Devendra",
+//     role: "Java Developer",
+//     experience: 1
+// };
+// console.log(Object.is(user, user1)); // false it checks if two objects are same
+// const user2 = user;
+// console.log(Object.is(user, user2)); // true
+
+
+// //defineProperty this method is used to define a new property or modify an existing property on an object
+// Object.defineProperty(user, "salary", {
+//     value: 50000, // value of the property
+
+// });
+
+
+// class users {
+//     #password;
+//     constructor(name,password){
+//         this.name = name;
+//         this.#password = password;
+//     }
+//     checkPassword(password){
+//         return this.#password === password;
+//     }
+//     abc(){
+//         console.log(this.#password); // accessing private field within the class    
+//     }
+// }
+// const u1 = new users("dev","12345");
+// u1.abc();
+// console.log(u1.name); // dev
+// console.log(u1.checkPassword("12345")); // true
+// // console.log(u1.#password); // undefined
+
+
+//findlast() is a method that returns the last element in an array that satisfies a given condition
+// it introduced in ES2023 es14
+// it resturn the last element that satisfies the condition
+// stop  as soon as it finds the last element that satisfies the condition
+// if no element satisfies the condition it returns undefined
+//
+
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const lastEven = numbers.findLast(num => num % 2 === 0);
+// console.log(lastEven); // 10
+
+
+
+// findlastIndex() is a method that returns the index of the last element in an array that satisfies a given condition
+// it introduced in ES2023 es14
+// it resturn the index of last element that satisfies the condition
+// stop  as soon as it finds the last element that satisfies the condition
+// if no element satisfies the condition it returns -1
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const lastEvenIndex = numbers.findLastIndex(num => num % 2 === 0);
+// console.log(lastEvenIndex); // 9 
