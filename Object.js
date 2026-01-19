@@ -549,7 +549,7 @@
 //         return this.#password === password;
 //     }
 //     abc(){
-//         console.log(this.#password); // accessing private field within the class    
+//         console.log(this.#password); // accessing private field within the class
 //     }
 // }
 // const u1 = new users("dev","12345");
@@ -581,11 +581,11 @@
 
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // const lastEvenIndex = numbers.findLastIndex(num => num % 2 === 0);
-// console.log(lastEvenIndex); // 9 
+// console.log(lastEvenIndex); // 9
 
 // static and non static method in class
 // console.log("hello world ");
-// static method 
+// static method
 // class Demo {
 //     static show() {
 //         console.log("staic method");
@@ -632,19 +632,19 @@
 // console.log(calculator.substreact(60,50))
 
 // static method are function that are defind on a class  but not are accesable throw instances of a class insted of they colled direclty class it sell
-// this method are use full for creating util or function or shared logic does not depend indivical instans 
-// non static - a non static are method that bilong to an object of a class it is colled using the object not class uses of non static methood 
+// this method are use full for creating util or function or shared logic does not depend indivical instans
+// non static - a non static are method that bilong to an object of a class it is colled using the object not class uses of non static methood
 // 1 we method use object data
-// 2 when behavious of object is deffrent 
-// this keyword are used of 
-// no acces are to instanc method 
+// 2 when behavious of object is deffrent
+// this keyword are used of
+// no acces are to instanc method
 
 
-// function prototype is an object in js from which all function inherit comman method and properties 
+// function prototype is an object in js from which all function inherit comman method and properties
 // 🔸 What is call()?
 
 // The call() method is used to invoke a function immediately and explicitly set the value of this for that function.
-// aregument are passed one by one and in this method unlimeted aregument are allowed 
+// aregument are passed one by one and in this method unlimeted aregument are allowed
 // let person ={
 //     name : "dev"
 // }
@@ -687,16 +687,16 @@
 // bind() does not invoke the function immediately.
 // It returns a new function with a permanently bound `this` value.
 // In this method, `this` does not get lost.
-function teach(subject) {
-    console.log(this.name + " padhate hai " + subject);
-}
+// function teach(subject) {
+//     console.log(this.name + " padhate hai " + subject);
+// }
 
-let teacher = { name: "Ajay Sir" };
+// let teacher = { name: "Ajay Sir" };
 
-setTimeout(teach, 1000);
+// setTimeout(teach, 1000);
 
-let bindbound = teach.bind(teacher, "Java");
-setTimeout(bindbound, 1000);
+// let bindbound = teach.bind(teacher, "Java");
+// setTimeout(bindbound, 1000);
 
 // tostring
 // hasownpropertiy
